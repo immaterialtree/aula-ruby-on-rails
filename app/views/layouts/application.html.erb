@@ -19,4 +19,6 @@
   <body>
     <%= yield %>
   </body>
+
+  <%= render partial: "shared/footer", locals: { start_year: @start_year || '2000'} %>
 </html>
