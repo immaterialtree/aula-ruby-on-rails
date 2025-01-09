@@ -4,5 +4,5 @@ class Post
   field :title, type: String
   field :body, type: String
 
-  has_many comments, dependent: :destroy
+  has_many :comments, dependent: :destroy
 end
