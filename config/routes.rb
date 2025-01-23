@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :products
-  resources :users
   get "example/test"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -14,5 +13,5 @@ Rails.application.routes.draw do
   get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
 
   # Defines the root path route ("/")
-  root "products#index"
+  # root "products#index"
 end
