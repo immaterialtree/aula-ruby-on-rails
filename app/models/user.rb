@@ -37,4 +37,5 @@ class User
   field :name, type: String
 
   has_many :cart_items, dependent: :destroy
+  has_and_belongs_to_many :products
 end
